@@ -1,0 +1,14 @@
+.footer {
+    background-color: blueviolet;
+    color: antiquewhite;
+}
+.btn_footer1{
+    color: aqua;
+    border-radius: 10px;
+    background-color: black;
+}
+.btn_footer2{
+    color: rgb(255, 0, 0);
+    border-radius: 10px;
+    background-color: rgb(4, 0, 255);
+}
