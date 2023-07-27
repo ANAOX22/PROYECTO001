@@ -1,15 +1,21 @@
 import { createContext, useState } from "react";
 
 
+
+
+
 export const AppContext = createContext()
+//console.log('AppContext ', AppContext)
 
+// ========================================================================
 export const ContextProvider = ({ children }) => {
+    //console.log('=>CONTEXT PROVIDER', ContextProvider)
     
+
     const [logado, setLogado] = useState(false)
+    //console.log('CONTEXT PROVIDER', logado)
 
-    const state = useState(true)
 
-    //console.log('CONTEXT PROVIDER', state)
 
     return (
         <AppContext.Provider value = { { logado, setLogado } }>

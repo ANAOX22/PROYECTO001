@@ -1,30 +1,32 @@
-import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+
+import './Pokemon.css'
+import { useFetch } from "./useFetch";
+import { useContext } from "react";
+import { AppContext } from "../../Contexts/ContextProvider";
 
 const Pokemon = () => {
-    const [pokemon, setPokemon] = useState({})
-    
+    const navigate = useNavigate()
+
+    const { logado, setLogado } = useContext(AppContext)
+
+
     const { id } = useParams()
+    const { data, loading, error } = useFetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
 
-
-
-    useEffect(() => {
-        const getPokemon = async () => {
-            const resposta = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
-            const dados = await resposta.json()
-            setPokemon(dados)
-        }
-        getPokemon()
-    },[])
+    const sair = () => {
+        setLogado(false)
+        navigate(`/`)
+    }
     
-console.log(pokemon)
-console.log(pokemon.game_indices)
+    return (
+        <div className="pokemon">
+            <h1> Id de la URL: {id}</h1>
+            <h2> Nome DO POKEMON QUE ESTA LA POKEAPI: {data.name}</h2>
+            <h2> Id DO POKEMON QUE ESTA LA POKEAPI: {data.id}</h2>
+            <button type="button" onClick={sair}>SALIR</button>
 
-    return (<>
-        <h1> Id de la URL: {id}</h1>
-        <h2> Nome DO POKEMON QUE ESTA LA POKEAPI:  {pokemon.name}</h2>
-        <h2> Id DO POKEMON QUE ESTA LA POKEAPI:  {pokemon.id}</h2>
-    </>
+        </div>
     )
 }
 export default Pokemon 

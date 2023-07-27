@@ -1,10 +1,8 @@
-
-
-
 const addi = (produtos) =>{
     return {
         type: 'ADD_PRODUTOS', produtos 
-    }
+    }        
+
 }
 
 const apaga = () =>{
@@ -13,7 +11,11 @@ const apaga = () =>{
     }
 }
 
-export default {
+const funcCion =  {
     addi, 
     apaga
 }
+
+
+
+export default funcCion

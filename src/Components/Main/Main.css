@@ -1,0 +1,11 @@
+.main {
+    font-size: 0.5em;
+
+    padding: 0 10px;
+    color: white;
+    margin: 0 5px;
+    border: solid 1px rgb(255, 239, 239);
+    border-radius: 10px;
+    background-color: rgb(183, 36, 36);
+    grid-area: M;
+}

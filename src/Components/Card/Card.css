@@ -1,0 +1,11 @@
+.card{
+    padding-left: 50px;
+    margin: 5px;
+    background-color: rgb(67, 8, 122);
+    color: aquamarine;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: min-content;
+    width: 150px;
+    grid-area: C;
+}

@@ -5,6 +5,7 @@ const LISTA_CUSOS = [
     'HTML ',
     'CSS ',
     'JS ',
+    'PYTON ',
 ]
 
 const LISTA_ALUNOS = [
@@ -28,14 +29,16 @@ const alunos =(state= LISTA_ALUNOS)=>{
 
 
 const produtos =(state=LISTA_PRODUTOS, action)=>{
-    //console.log('estado/index.js' ,action ,state)
+    // console.log('estado/index.js' ,action ,state)
     if(action.type === 'ADD_PRODUTOS'){
         state.push(action.produtos)
+        console.log('index-ADD')
     }
     if (action.type === 'REMOVE_PRODUTOS'){
         state.pop()
+        console.log('index-REMOVE')
     }
-    //console.log('estado/index.js=>', state)
+    // console.log('estado/index.js=>', state)
 
     return state
 }

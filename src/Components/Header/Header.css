@@ -1,11 +1,13 @@
-.header{
-    background-color: rgb(102, 229, 123);
-}
-.btn1{
-    background-color: blue;
-    color: aqua;
-}
-.btn2{
-    background-color: rgb(89, 89, 158);
-    color: rgb(255, 0, 0);
+.header {
+    padding: 0 10px;
+
+    font-size: 0.5em;
+    border: solid 1px rgb(255, 244, 244);
+    margin: 5px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgb(119, 1, 179);
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-area: H;
 }

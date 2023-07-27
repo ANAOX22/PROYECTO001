@@ -1,3 +1,18 @@
-.home{
-    background-color: aquamarine;
+.home {
+    display: grid;
+    background-color: black;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-areas:" A A H H H H H H H H H H H H H H "
+                        " A A H H H H H H H H H H H H H H "
+                        " A A M M M M M M M M M M M M M M "
+                        " A A M M M M M M M M M M M M M M "
+                        " A A M M M M M M M M M M M M M M "
+                        " A A M M M M M M M M M M M M M M "
+                        " A A M M M M M M M M M M M M M M "
+                        " A A M M M M M M M M M M M M M M "
+                        " A A M M M M M M M M M M M M M M "
+                        " A A M M M M M M M M M M M M M M "
+                        " A A M M M M M M M M M M M M M M "
+                        " F F F F F F F F F F F F F F F F ";
 }
