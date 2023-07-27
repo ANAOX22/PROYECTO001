@@ -39,7 +39,7 @@ const Main = () => {
                 onChange={(event) => setProd(event.target.value)} />
                 <button type="button" onClick={addProdutos}>ADD PRODUTOS</button>
                 <button type="button" onClick={removeProdutos}>DELETE PRODUTOS</button></p>
-            <Card conteudo={prod} />
+            <Card conteudo={objetoCuatro} />
         </div>
     )
 }
