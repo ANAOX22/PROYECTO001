@@ -8,6 +8,8 @@ const Main = () => {
 
     const [prod, setProd] = useState('')
     //====================================================================
+    const objetoDos = useSelector(state => state.cursos)
+    //====================================================================
     const objetoCuatro = useSelector(state => state.produtos)
     //console.log('selector', objetoCuatro)
     //===================================================================
@@ -40,6 +42,8 @@ const Main = () => {
                 <button type="button" onClick={addProdutos}>ADD PRODUTOS</button>
                 <button type="button" onClick={removeProdutos}>DELETE PRODUTOS</button></p>
             <Card conteudo={objetoCuatro} />
+            <Card conteudo={objetoDos} />
+
         </div>
     )
 }

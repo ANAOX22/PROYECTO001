@@ -25,8 +25,7 @@ const Pokemon = () => {
             <h2> Nome DO POKEMON QUE ESTA LA POKEAPI: {data.name}</h2>
             <h2> Id DO POKEMON QUE ESTA LA POKEAPI: {data.id}</h2>
             <button type="button" onClick={sair}>SALIR</button>
-
         </div>
     )
 }
-export default Pokemon 
+export default Pokemon
